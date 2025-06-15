@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Restaurante Mestre Cuca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">   
+    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="./Assets/Logo Restaurante.png" alt="Logo" class="logo">
+        <h1>Bem-vindos ao Mestre Cuca</h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav id="navbar">
+        <ul class="navbar-links">
+            <li><a href="#inicio">Início</a></li>   
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#galeria">Especialidades</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <div class="inicio-content">
+        <h2>O melhor da gastronomia artesanal está aqui!</h2>
+        <p>Pratos feitos com carinho e ingredientes frescos.</p>
+    </div>
+    <form class="form-container" id="form-contato">
+        <h2>Reserve sua Mesa</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="people">Quantidade de Pessoas:</label>
+        <input type="number" id="people" name="people" min="1" required>
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Hora:</label>
+        <input type="time" id="time" name="time" required>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Enviar Reserva</button>
+    </form>
+</section>
+
+<section id="cardapio" style="margin-top: 180px;">
+    <h2>Nosso Cardápio</h2>
+    <p>Experimente os sabores que fazem sucesso!</p>
+
+    <div class="categoria" id="entradas">
+        <h3>Entradas</h3>
+        <div class="prato"><span>Bruschetta Tradicional</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Carpaccio de Filé</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Salada Caesar</span><span>R$ 17,90</span></div>
+        <div class="prato"><span>Tábua de Frios</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Tábua de Queijos</span><span>R$ 27,90</span></div>
+        <div class="prato"><span>Pão de Alho</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Caldo de Peixe</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Canapés Variados</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Fritas com Molhos</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Hummus com Pita</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Mini Quiches</span><span>R$ 23,90</span></div>
+        <div class="prato"><span>Sopa de Tomate</span><span>R$ 16,90</span></div>
+        <div class="prato"><span>Ceviche Leve</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Tomates Recheados</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Espetinho de Legumes</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Guacamole Caseiro</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Tortilla Chips</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Pizza Branca</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Antipasto Italiano</span><span>R$ 32,90</span></div>
+        <div class="prato"><span>Mix de Folhas Frescas</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Polenta Grelhada</span><span>R$ 21,90</span></div>
+    </div>
+
+    <div class="categoria" id="principais">
+        <h3>Pratos Principais</h3>
+        <div class="prato"><span>Lasanha à Bolonhesa</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Frango Grelhado</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Costela BBQ</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Bife à Parmegiana</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Macarrão com Molho Caseiro</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Feijoada Completa</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Paella Valenciana</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Salmão na Brasa</span><span>R$ 64,90</span></div>
+        <div class="prato"><span>Milanesa de Frango</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Carne de Panela</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Bolonhesa com Rigatoni</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Lombo Assado</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Bife Ancho</span><span>R$ 69,90</span></div>
+        <div class="prato"><span>Peixe do Dia</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Strogonoff de Frango</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Arroz Carreteiro</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Moqueca Baiana</span><span>R$ 54,90</span></div>
+        <div class="prato"><span>Churrasco Gaúcho</span><span>R$ 79,90</span></div>
+        <div class="prato"><span>Coq au Vin</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 54,90</span></div>
+    </div>
+
+    <div class="categoria" id="pizzas">
+        <h3>Pizzas Artesanais</h3>
+        <div class="prato"><span>Margherita</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Calabresa com Catupiry</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Quatro Queijos</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Frango com Requeijão</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Vegana</span><span>R$ 38,90</span></div>
+        <div class="prato"><span>Pepperoni</span><span>R$ 45,90</span></div>
+        <div class="prato"><span>Portuguesa</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Atum</span><span>R$ 43,90</span></div>
+        <div class="prato"><span>Frutos do Mar</span><span>R$ 54,90</span></div>
+        <div class="prato"><span>Brócolis com Bacon</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Romeu e Julieta</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Vegetariana</span><span>R$ 38,90</span></div>
+        <div class="prato"><span>Picanha na Pizza</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Frango com Catupiry</span><span>R$ 43,90</span></div>
+        <div class="prato"><span>Frango com Bacon</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Mexicana</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Tradicional</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Com Trufas</span><span>R$ 69,90</span></div>
+        <div class="prato"><span>À Moda da Casa</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Doce de Leite</span><span>R$ 42,90</span></div>
+    </div>
+
+    <div class="categoria" id="sushis">
+        <h3>Sushis e Orientais</h3>
+        <div class="prato"><span>Hossomaki</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Temaki</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Gunkan</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Uramaki</span><span>R$ 32,90</span></div>
+        <div class="prato"><span>Yakisoba Vegetariano</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Yakisoba de Frango</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Sashimi de Salmão</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Niguiri de Atum</span><span>R$ 37,90</span></div>
+        <div class="prato"><span>Ramen Tradicional</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Katsu Curry</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Tempurá de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Onigiri de Atum</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Hot Roll</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Uramaki Especial</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Sushi Mix</span><span>R$ 69,90</span></div>
+        <div class="prato"><span>Sashimi Mix</span><span>R$ 64,90</span></div>
+        <div class="prato"><span>Temaki de Salmão</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Yakisoba de Frango</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Roll de Salmão</span><span>R$ 32,90</span></div>
+        <div class="prato"><span>Shimeji com Frango</span><span>R$ 39,90</span></div>
+    </div>
+
+    <div class="categoria" id="massas">
+        <h3>Massas Italianas</h3>
+        <div class="prato"><span>Spaghetti à Carbonara</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Fettuccine Alfredo</span><span>R$ 43,90</span></div>
+        <div class="prato"><span>Penne ao Molho de Tomate Fresco</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Ravioli de Ricota</span><span>R$ 46,90</span></div>
+        <div class="prato"><span>Linguini ao Pesto</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Fusilli ao Molho Branco</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Lasanha de Berinjela</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Tortellini com Recheio de Queijo</span><span>R$ 43,90</span></div>
+        <div class="prato"><span>Risoto de Cogumelos</span><span>R$ 46,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Pappardelle com Ragù</span><span>R$ 47,90</span></div>
+        <div class="prato"><span>Tagliatelle com Funghi</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Penne ao Molho de Tomate Seco</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Spaghetti com Anchovas</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Lasanha de Frango</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Farfalle com Ervas</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Gnocchi com Molho de Tomate</span><span>R$ 43,90</span></div>
+        <div class="prato"><span>Ravioli de Espinafre</span><span>R$ 45,90</span></div>
+        <div class="prato"><span>Tagliolini ao Salmão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Carbonara Light</span><span>R$ 39,90</span></div>
+    </div>
+
+    <div class="categoria" id="sobremesas">
+        <h3>Sobremesas</h3>
+        <div class="prato"><span>Pudim de Leite Condensado</span><span>R$ 12,90</span></div>
+        <div class="prato"><span>Tiramisu</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Profiteroles</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Pavê de Chocolate</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Sorvete Artesanal</span><span>R$ 12,90</span></div>
+        <div class="prato"><span>Crepe Suzette</span><span>R$ 17,90</span></div>
+        <div class="prato"><span>Crème Brûlée</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Apple Pie</span><span>R$ 16,90</span></div>
+        <div class="prato"><span>Chocolate Lava Cake</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Donuts Caseiros</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Pudim de Chocolate</span><span>R$ 13,90</span></div>
+        <div class="prato"><span>Cheesecake de Morango</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Panna Cotta</span><span>R$ 16,90</span></div>
+        <div class="prato"><span>Mousse de Chocolate</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Torta de Limão</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Crepe de Nutella</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Waffle Belga</span><span>R$ 17,90</span></div>
+        <div class="prato"><span>Paçoca</span><span>R$ 13,90</span></div>
+        <div class="prato"><span>Bolo de Chocolate</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Brigadeiro Gourmet</span><span>R$ 16,90</span></div>
+    </div>
+
+    <div class="categoria" id="churrasco">
+        <h3>Churrasco e Rodízios</h3>
+        <div class="prato"><span>Rodízio Gaúcho</span><span>R$ 79,90</span></div>
+        <div class="prato"><span>Fraldinha na Brasa</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Picanha</span><span>R$ 69,90</span></div>
+        <div class="prato"><span>Costela Defumada</span><span>R$ 54,90</span></div>
+        <div class="prato"><span>Alcatra</span><span>R$ 52,90</span></div>
+        <div class="prato"><span>Contra Filé</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Coxão Duro</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Costelinha Suína</span><span>R$ 55,90</span></div>
+        <div class="prato"><span>Chester Assado</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Cupim</span><span>R$ 52,90</span></div>
+        <div class="prato"><span>Cordeiro</span><span>R$ 64,90</span></div>
+        <div class="prato"><span>Porco Assado</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Roast Beef</span><span>R$ 54,90</span></div>
+        <div class="prato"><span>Chule de Cordeiro</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Costela de Porco</span><span>R$ 57,90</span></div>
+        <div class="prato"><span>Linguiça Toscana</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Costela Americana</span><span>R$ 59,90</span></div>
+        <div class="prato"><span>Costela Mexicana</span><span>R$ 56,90</span></div>
+        <div class="prato"><span>Frango Grelhado</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Frango na Chapa</span><span>R$ 37,90</span></div>
+    </div>
+
+    <div class="categoria" id="bebidas">
+        <h3>Bebidas</h3>
+        <div class="prato"><span>Água Mineral</span><span>R$ 6,90</span></div>
+        <div class="prato"><span>Refrigerante</span><span>R$ 8,90</span></div>
+        <div class="prato"><span>Chopp Brahma</span><span>R$ 12,90</span></div>
+        <div class="prato"><span>Vinho Tinto</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Vinho Branco</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Cerveja Artesanal</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Suco Natural</span><span>R$ 12,90</span></div>
+        <div class="prato"><span>Café Expresso</span><span>R$ 5,90</span></div>
+        <div class="prato"><span>Whisky</span><span>R$ 25,90</span></div>
+        <div class="prato"><span>Cachaça Premium</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Chá Gelado</span><span>R$ 10,90</span></div>
+        <div class="prato"><span>Água com Gás</span><span>R$ 7,90</span></div>
+        <div class="prato"><span>Smoothie de Frutas</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Limão Siciliano</span><span>R$ 12,90</span></div>
+        <div class="prato"><span>Caipirinha</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Milkshake de Chocolate</span><span>R$ 16,90</span></div>
+        <div class="prato"><span>Cappuccino</span><span>R$ 9,90</span></div>
+        <div class="prato"><span>Suco de Laranja</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Chá Preto</span><span>R$ 8,90</span></div>
+        <div class="prato"><span>Espresso</span><span>R$ 6,90</span></div>
+    </div>
+
+    <div class="categoria" id="petiscos">
+        <h3>Petiscos</h3>
+        <div class="prato"><span>Camarão Empanado</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Asa de Frango</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Porção de Batata Frita</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Polenta Frita</span><span>R$ 17,90</span></div>
+        <div class="prato"><span>Isca de Frango</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Caldo de Mandioca</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Bratwurst</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Espetinho de Carne</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Mini Hambúrguer</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Mini Temaki</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Calamari Frito</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Empanadas Argentinas</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Crostinis de Queijo</span><span>R$ 27,90</span></div>
+        <div class="prato"><span>Pinacolada</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Mini Croissants</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Palmito Frito</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Provolone com Mel</span><span>R$ 23,90</span></div>
+        <div class="prato"><span>Miniquiches</span><span>R$ 25,90</span></div>
+        <div class="prato"><span>Pão de Queijo</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Taquillas de Camarão</span><span>R$ 29,90</span></div>
+    </div>
+
+    <div class="categoria" id="aperitivos">
+        <h3>Aperitivos</h3>
+        <div class="prato"><span>Cocktail de Camarão</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Tábua de Aperitivos</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Patê de Berinjela</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Patê de Palmito</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Amendoim Torrado</span><span>R$ 12,90</span></div>
+        <div class="prato"><span>Azeitonas Temperadas</span><span>R$ 14,90</span></div>
+        <div class="prato"><span>Castanhas Mistas</span><span>R$ 16,90</span></div>
+        <div class="prato"><span>Olivas Temperadas</span><span>R$ 15,90</span></div>
+        <div class="prato"><span>Queijo Minas</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Patê de Tomate Seco</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Patê de Salmão</span><span>R$ 23,90</span></div>
+        <div class="prato"><span>Cestinhas de Queijo</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Tapenade de Azeitona</span><span>R$ 20,90</span></div>
+        <div class="prato"><span>Patê de Berinjela</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Patê de Abóbora</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Patê de Frango</span><span>R$ 17,90</span></div>
+        <div class="prato"><span>Patê de Rúcula</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Patê de Bacalhau</span><span>R$ 25,90</span></div>
+        <div class="prato"><span>Patê de Shitake</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Patê de Queijo Cabra</span><span>R$ 24,90</span></div>
+    </div>
+
+    <div class="categoria" id="sanduiches">
+        <h3>Sanduíches</h3>
+        <div class="prato"><span>Hambúrguer Clássico</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Hambúrguer Vegano</span><span>R$ 27,90</span></div>
+        <div class="prato"><span>Frango com Bacon</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Frango Teriyaki</span><span>R$ 28,90</span></div>
+        <div class="prato"><span>Cubano</span><span>R$ 32,90</span></div>
+        <div class="prato"><span>Banh Mi</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Club Sandwich</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>BLT</span><span>R$ 27,90</span></div>
+        <div class="prato"><span>Reuben</span><span>R$ 31,90</span></div>
+        <div class="prato"><span>Monte Cristo</span><span>R$ 33,90</span></div>
+        <div class="prato"><span>Subway Caseiro</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Steakhouse Sandwich</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Pastrami</span><span>R$ 36,90</span></div>
+        <div class="prato"><span>Philly Cheesesteak</span><span>R$ 33,90</span></div>
+        <div class="prato"><span>Grilled Cheese</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Frango Grelhado</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Wrap de Frango</span><span>R$ 27,90</span></div>
+        <div class="prato"><span>Wrap de Salmão</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Sanduíche de Ovo</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Bagel com Cream Cheese</span><span>R$ 24,90</span></div>
+    </div>
+
+    <div class="categoria" id="saladas">
+        <h3>Saladas</h3>
+        <div class="prato"><span>Salada Grega</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Salada de Quinoa</span><span>R$ 26,90</span></div>
+        <div class="prato"><span>Salada de Grãos</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Salada de Frango</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Salada de Camarão</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Salada de Beterraba</span><span>R$ 23,90</span></div>
+        <div class="prato"><span>Salada Caesar</span><span>R$ 27,90</span></div>
+        <div class="prato"><span>Salada de Lentilha</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Salada Mediterrânea</span><span>R$ 26,90</span></div>
+        <div class="prato"><span>Salada de Aveia</span><span>R$ 23,90</span></div>
+        <div class="prato"><span>Salada de Macarrão</span><span>R$ 25,90</span></div>
+        <div class="prato"><span>Salada de Feijão Branco</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Salada de Milho</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Salada de Pepino</span><span>R$ 20,90</span></div>
+        <div class="prato"><span>Salada de Rúcula</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Salada de Risoni</span><span>R$ 25,90</span></div>
+        <div class="prato"><span>Salada de Grãos e Frutas</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Salada de Grãos Vermelhos</span><span>R$ 26,90</span></div>
+        <div class="prato"><span>Salada de Quinoa com Salmão</span><span>R$ 32,90</span></div>
+        <div class="prato"><span>Salada de Frango Desfiado</span><span>R$ 29,90</span></div>
+    </div>
+
+    <div class="categoria" id="sopas">
+        <h3>Sopas</h3>
+        <div class="prato"><span>Sopa de Tomate</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Sopa de Legumes</span><span>R$ 17,90</span></div>
+        <div class="prato"><span>Sopa de Mandioca</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Sopa de Caldo de Galinha</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Sopa de Couve</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Sopa de Lentilha</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Sopa de Batata Doce</span><span>R$ 20,90</span></div>
+        <div class="prato"><span>Sopa de Abóbora</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Sopa Thai</span><span>R$ 23,90</span></div>
+        <div class="prato"><span>Sopa de Camarão</span><span>R$ 25,90</span></div>
+        <div class="prato"><span>Sopa de Frango</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Sopa de Peixe</span><span>R$ 24,90</span></div>
+        <div class="prato"><span>Sopa de Milho</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Sopa de Cenoura</span><span>R$ 18,90</span></div>
+        <div class="prato"><span>Sopa de Couve-flor</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Sopa de Aspargos</span><span>R$ 22,90</span></div>
+        <div class="prato"><span>Sopa de Lentilha Vermelha</span><span>R$ 20,90</span></div>
+        <div class="prato"><span>Sopa de Shiitake</span><span>R$ 21,90</span></div>
+        <div class="prato"><span>Sopa de Mandioquinha</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Sopa de Tomate com Manjericão</span><span>R$ 20,90</span></div>
+    </div>
+
+    <div class="categoria" id="risotos">
+        <h3>Risotos</h3>
+        <div class="prato"><span>Risoto de Cogumelos</span><span>R$ 46,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Salmão</span><span>R$ 52,90</span></div>
+        <div class="prato"><span>Risoto de Funghi</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Frango</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Risoto de Queijo</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Ervilhas</span><span>R$ 40,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Cogumelos</span><span>R$ 46,90</span></div>
+        <div class="prato"><span>Risoto de Salmão</span><span>R$ 52,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Funghi</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Frango</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Risoto de Queijo</span><span>R$ 41,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Risoto de Ervilhas</span><span>R$ 40,90</span></div>
+        <div class="prato"><span>Risoto de Camarão</span><span>R$ 49,90</span></div>
+    </div>
+
+    <div class="categoria" id="sushis2">
+        <h3>Sushis e Orientais</h3>
+        <div class="prato"><span>Hossomaki</span><span>R$ 29,90</span></div>
+        <div class="prato"><span>Temaki</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Gunkan</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Uramaki</span><span>R$ 32,90</span></div>
+        <div class="prato"><span>Yakisoba Vegetariano</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Yakisoba de Frango</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Sashimi de Salmão</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Niguiri de Atum</span><span>R$ 37,90</span></div>
+        <div class="prato"><span>Ramen Tradicional</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Katsu Curry</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Tempurá de Camarão</span><span>R$ 49,90</span></div>
+        <div class="prato"><span>Onigiri de Atum</span><span>R$ 19,90</span></div>
+        <div class="prato"><span>Hot Roll</span><span>R$ 34,90</span></div>
+        <div class="prato"><span>Uramaki Especial</span><span>R$ 39,90</span></div>
+        <div class="prato"><span>Sushi Mix</span><span>R$ 69,90</span></div>
+        <div class="prato"><span>Sashimi Mix</span><span>R$ 64,90</span></div>
+        <div class="prato"><span>Temaki de Salmão</span><span>R$ 42,90</span></div>
+        <div class="prato"><span>Yakisoba de Frango</span><span>R$ 44,90</span></div>
+        <div class="prato"><span>Roll de Salmão</span><span>R$ 32,90</span></div>
+        <div class="prato"><span>Shimeji com Frango</span><span>R$ 39,90</span></div>
+    </div>
+</section>
+
+<section id="promocoes">
+    <h2>Promoções Especiais</h2>
+    <div class="promo-box">
+        <h3>Prato do Dia</h3>
+        <p>R$ 39,90 - Acompanha arroz, feijão e suco natural.</p>
+    </div>
+    <div class="promo-box">
+        <h3>Sábado é dia de Pizza</h3>
+        <p>Compre uma pizza grande e leve outra pequena grátis!</p>
+    </div>
+    <div class="promo-box">
+        <h3>Happy Hour</h3>
+        <p>Das 17h às 19h: Chopp em dobro por metade do preço!</p>
+    </div>
+</section>
+
+
+<section id="galeria">
+    <h2>Nossas Especialidades</h2>
+    <p>Conheça as categorias de pratos que fazem parte da nossa cozinha!</p>
+    <div class="galeria-grid">
+        <a href="#entradas" class="icone-item">
+            <i class="fas fa-utensils fa-5x"></i>
+            <p>Entradas</p>
+        </a>
+        <a href="#principais" class="icone-item">
+            <i class="fas fa-burger fa-5x"></i>
+            <p>Pratos Principais</p>
+        </a>
+        <a href="#pizzas" class="icone-item">
+            <i class="fas fa-pizza-slice fa-5x"></i>
+            <p>Pizzas Artesanais</p>
+        </a>
+        <a href="#massas" class="icone-item">
+            <i class="fas fa-bowl-rice fa-5x"></i>
+            <p>Massas Italianas</p>
+        </a>
+        <a href="#sushis2" class="icone-item">
+            <i class="fas fa-fish fa-5x"></i>
+            <p>Sushis e Orientais</p>
+        </a>
+        <a href="#sobremesas" class="icone-item">
+            <i class="fas fa-ice-cream fa-5x"></i>
+            <p>Sobremesas</p>
+        </a>
+        <a href="#churrasco" class="icone-item">
+            <i class="fas fa-drumstick-bite fa-5x"></i>
+            <p>Churrasco e Rodízios</p>
+        </a>
+        <a href="#bebidas" class="icone-item">
+            <i class="fas fa-wine-glass-alt fa-5x"></i>
+            <p>Bebidas</p>
+        </a>
+        <a href="#petiscos" class="icone-item">
+            <i class="fas fa-hamburger fa-5x"></i>
+            <p>Petiscos</p>
+        </a>
+    </div>
+</section>
+
+<section id="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="depoimento">
+        <p>"O melhor restaurante da cidade! Comida deliciosa e atendimento impecável."</p>
+        <strong>- João Silva</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Sempre volto aqui com minha família. Vale cada centavo!"</p>
+        <strong>- Ana Souza</strong>
+    </div>
+    <div class="depoimento">
+        <p>"A melhor pizza da cidade! Vale muito a pena!"</p>
+        <strong>- Carlos Mendes</strong>
+    </div>
+    <div class="depoimento">
+        <p>"Ambiente familiar e comida incrível. Recomendo demais!"</p>
+        <strong>- Juliana Lima</strong>
+    </div>
+</section>
+
+
+<section id="contato">
+    <h2>Entre em Contato</h2>
+    <p><i class="fas fa-phone-alt"></i> Telefone: (11) 99999-9999</p>
+    <p><i class="fas fa-envelope"></i> Email: contato@mestre-cuca.com.br</p>
+    <p><i class="fas fa-map-marker-alt"></i> Endereço: Rua das Delícias, 123 - São Paulo/SP</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.448417740996!2d-46.63465338502155!3d-23.550659284684247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59555555555%3A0x5555555555555555!2sSão+Paulo%2C+SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<footer id="footer">
+    <p>&copy; 2025 Restaurante Mestre Cuca. Todos os direitos reservados.</p>
+    <p><a href="mailto:andersonziggler121@gmail.com" class="email-link">Envie um e-mail para o Desenvolvedor do Site</a></p>
+</footer>
+
+<div class="fixed-buttons">
+    <a href="mailto:andersonziggler121@gmail.com" class="btn-fixed btn-email" title="E-mail">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.instagram.com/i_am_andersonpacheco/" target="_blank" class="btn-fixed btn-instagram" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/anderson-pacheco-dev/" target="_blank" class="btn-fixed btn-linkedin" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/AndersonRedfield?tab=repositories" target="_blank" class="btn-fixed btn-github" title="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+</div>
+
+
+<a href="http://wa.me/5571992942934" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="Script.js"></script>
+</body>
+</html>
